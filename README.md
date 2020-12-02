@@ -81,7 +81,6 @@ while True:
             val += 1
             pin1.write_analog(val)
             sleep_ms(5)
-       
         display.show(Image.SURPRISED)
         say('The light is getting darker!')
         display.show(Image.HAPPY)    
@@ -95,7 +94,6 @@ while True:
             val -= 1
             pin1.write_analog(val)
             sleep_ms(5)
-            
         breath_count += 1
  ```       
  
