@@ -97,7 +97,8 @@ while True:
             sleep_ms(5)
             
         breath_count += 1
-        
+ ```       
+ 
  ## STEP 8: Rename Script Name To talking_breath
 
 ## STEP 9: Click Save
