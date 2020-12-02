@@ -99,7 +99,7 @@ while True:
         breath_count += 1
  ```       
  
- ## STEP 8: Rename Script Name To talking_breath
+## STEP 8: Rename Script Name To talking_blink_and_breath
 
 ## STEP 9: Click Save
 ![image](https://github.com/mytechnotalent/MicroPython-micro-bit_Talking_Blink_And_Breath/blob/main/STEP%209.png?raw=true)
