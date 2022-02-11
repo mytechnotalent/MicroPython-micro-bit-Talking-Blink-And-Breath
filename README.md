@@ -44,7 +44,6 @@ from time import sleep_ms
 from microbit import pin1, display, Image
 from speech import say
 
-# Customize bot speaking speed
 SPEED = 95
 
 while True:
@@ -54,23 +53,15 @@ while True:
     blink_count = 0
     while blink_count < 2:
         pin1.write_digital(1)
-        
         display.show(Image.SURPRISED)
-        
-        say('The light is on!', speed=SPEED)
-        
+        say('The light is on!', speed=SPEED)  
         display.show(Image.HAPPY)
-        
         sleep(5)
         
         pin1.write_digital(0)
-        
         display.show(Image.SURPRISED)
-        
         say('The light is off!', speed=SPEED)
-        
         display.show(Image.HAPPY)
-        
         sleep(5)
         
         blink_count += 1
@@ -82,9 +73,7 @@ while True:
     val = 0
     while breath_count < 2:
         display.show(Image.SURPRISED)
-        
         say('The light is getting brighter!', speed=SPEED)
-        
         display.show(Image.HAPPY)
         
         # The val is initialized to 0 on line 6 and 
@@ -96,12 +85,10 @@ while True:
         while val <= 1022:
             val += 1
             pin1.write_analog(val)
-            
             sleep_ms(5)
+            
         display.show(Image.SURPRISED)
-
         say('The light is getting darker!', speed=SPEED)
-        
         display.show(Image.HAPPY)    
         
         # After we complete the first loop the val
@@ -113,7 +100,6 @@ while True:
         while val > 0:
             val -= 1
             pin1.write_analog(val)
-            
             sleep_ms(5)  
             
         breath_count += 1
